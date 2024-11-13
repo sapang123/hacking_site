@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launcher Download</title>
+</head>
+<body onload="downloadLauncher()">
+    <h1>Launcher 다운로드 및 실행</h1>
+    <p>launcher.bat 파일이 자동으로 다운로드됩니다. 다운로드 폴더에서 파일을 직접 실행하십시오.</p>
+
+    <script>
+        function downloadLauncher() {
+            const link = document.createElement('a');
+            link.href = 'https://github.com/사용자명/저장소명/raw/브랜치명/launcher.bat';
+            link.download = 'launcher.bat';
+            link.click();
+
+            alert("launcher.bat 파일이 다운로드되었습니다. 다운로드 폴더에서 직접 실행하세요.");
+        }
+    </script>
+</body>
+</html>
